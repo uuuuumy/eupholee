@@ -4,9 +4,9 @@ import Image from "next/image";
 import { Icon } from "@iconify-icon/react";
 import { Noto_Sans, Unna } from "@next/font/google";
 import elsvg from "../public/eupholee.svg";
-import blackDog from "../public/images/blackDog.png";
-import light from "../public/images/light.png";
-import project1 from "../public/images/project1.jpg";
+import blackDog from "../public/images/blackDog.webp";
+import light from "../public/images/light.webp";
+import project1 from "../public/images/project1.webp";
 
 const notoSans = Noto_Sans({ weight: "500" });
 const notoSansB = Noto_Sans({ weight: "700" });
