@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import { Form, Field } from "react-final-form";
 import { Noto_Sans } from "@next/font/google";
 import Alert from "@mui/material/Alert";
+import CircularProgress from "@mui/material/CircularProgress";
 
 type valuesType = React.FormEvent<Element> &
   Record<string, string> & {
@@ -157,7 +158,11 @@ const Contact = ({
                   )}
                 </Field>
 
-                <div className="flex items-center justify-end ">
+                <div className="flex items-center justify-end gap-1 ">
+                  {disSubmit ? (
+                    <CircularProgress size={20} color="success" />
+                  ) : null}
+
                   <button
                     type="submit"
                     className=" h-[24px] w-[134px] rounded-full bg-highlight text-[12px] text-white disabled:hover:cursor-not-allowed"
